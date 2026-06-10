@@ -16,7 +16,7 @@ build:
     - nc2csv=nappy.script.nc2csv:nc2csv
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -34,7 +34,6 @@ requirements:
     - cf_xarray
     - cftime
     - netcdf4
-    - {{ pin_compatible('numpy') }}
     - python >=3.6
     - scipy
     - xarray
